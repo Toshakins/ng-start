@@ -13,10 +13,14 @@
 	margin-left: 48px;	
 }
 
-.big-carousel__img-block {
+.big-carousel__wrapper {
 	@include size($big-carousel-size...);
 	position: relative;
 	margin: auto;
+}
+
+.big-carousel__img-block {
+
 }
 
 .big-carousel__img {

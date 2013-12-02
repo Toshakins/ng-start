@@ -71,10 +71,12 @@
 		</aside>
 		<div class="span50">
 			<div class="big-carousel">
-				<div class="big-carousel__img-block">
-					<img class="big-carousel__img" src="img/bio-carousel/1.jpg" alt="Нана Геташвили">
-					<img class="big-carousel__img" src="img/bio-carousel/2.jpg" alt="Нана Геташвили">
-					<img class="active big-carousel__img" src="img/bio-carousel/3.jpg" alt="Нана Геташвили">
+				<div class="big-carousel__wrapper">	
+					<div class="big-carousel__img-block">
+						<img class="big-carousel__img" src="img/bio-carousel/1.jpg" alt="Нана Геташвили">
+						<img class="big-carousel__img" src="img/bio-carousel/2.jpg" alt="Нана Геташвили">
+						<img class="big-carousel__img" src="img/bio-carousel/3.jpg" alt="Нана Геташвили">
+					</div>
 					<p class="big-carousel__progress"><span class="position">1</span>/<span class="of">3</span></p>
 				</div>
 				<div class="big-carousel__controls-block">
@@ -110,15 +112,17 @@
 				<h2 class="article__header"><a href="#">Виллы и замки</a></h2>
 			</div>
 			<div class="carousel">
-				<div class="carousel__img-block">
-					<img class="active carousel__img" src="img/arch/castles/1.jpg" alt="N-ский замок">
+				<div class="carousel__wrapper">
+					<div class="carousel__img-block">
+						<img class="carousel__img" src="img/arch/castles/1.jpg" alt="N-ский замок">
+					</div>
 					<div class="carousel__progress emphasis">
 						<span class="position">1</span>/<span class="of">2</span>
 					</div>
 					<div class="carousel__controls-block emphasis">
-						<span class="carousel__prev"><a href="#"><img src="img/sprite.png" alt="Previous"></a></span>
-						<span class="carousel__title">Название проекта</span>
-						<span class="carousel__next"><a href="#"><img src="img/sprite.png" alt="Next"></a></span>
+						<span class="carousel__next"><a href="#"><img src="img/sprite.png" alt="Previous"></a></span>
+						<span><span class="carousel__title">Название проекта</span></span>
+						<span class="carousel__prev"><a href="#"><img src="img/sprite.png" alt="Next"></a></span>
 					</div>
 				</div>
 			</div>
@@ -128,16 +132,23 @@
 				<h2 class="article__header"><a href="#">Частные аппартаменты</a></h2>
 			</div>
 			<div class="carousel">
-				<div class="carousel__img-block">
-					<img class="active carousel__img" src="img/arch/appartments/1.jpg" alt="Аппартаменты N">
-					<img class="carousel__img" src="img/arch/appartments/2.jpg" alt="Аппартаменты N">
+				<div class="carousel__wrapper">
+					<div class="carousel__img-block">
+						<img class="carousel__img" src="img/arch/appartments/1.jpg" alt="Аппартаменты N">
+						<img class="carousel__img" src="img/arch/appartments/2.jpg" alt="Аппартаменты N">
+						<img class="carousel__img" src="img/arch/yachts/2.jpg" alt="Яхта N">
+					</div>
 					<div class="carousel__progress emphasis">
 						<span class="position">1</span>/<span class="of">2</span>
 					</div>
 					<div class="carousel__controls-block emphasis">
-						<span class="carousel__prev"><a href="#"><img src="img/sprite.png" alt="Previous"></a></span>
-						<span class="carousel__title">Название проекта</span>
-						<span class="carousel__next"><a href="#"><img src="img/sprite.png" alt="Next"></a></span>
+						<span class="carousel__next"><a href="#"><img src="img/sprite.png" alt="Previous"></a></span>
+						<span>
+							<span class="carousel__title">Название проекта</span>
+							<span class="carousel__title">Placeholder</span>
+							<span class="carousel__title">Lorem ipsum</span>
+						</span>
+						<span class="carousel__prev"><a href="#"><img src="img/sprite.png" alt="Next"></a></span>
 					</div>
 				</div>
 			</div>
@@ -147,16 +158,21 @@
 				<h2 class="article__header"><a href="#">Яхты</a></h2>
 			</div>
 			<div class="carousel">
-				<div class="carousel__img-block">
-					<img class="active carousel__img" src="img/arch/yachts/1.jpg" alt="Яхта N">
-					<img class="carousel__img" src="img/arch/yachts/2.jpg" alt="Яхта N">
+				<div class="carousel__wrapper">
+					<div class="carousel__img-block">
+						<img class="carousel__img" src="img/arch/yachts/1.jpg" alt="Яхта N">
+						<img class="carousel__img" src="img/arch/yachts/2.jpg" alt="Яхта N">
+					</div>
 					<div class="carousel__progress emphasis">
 						<span class="position">1</span>/<span class="of">2</span>
 					</div>
 					<div class="carousel__controls-block emphasis">
-						<span class="carousel__prev"><a href="#"><img src="img/sprite.png" alt="Previous"></a></span>
-						<span class="carousel__title">Название проекта</span>
-						<span class="carousel__next"><a href="#"><img src="img/sprite.png" alt="Next"></a></span>
+						<span class="carousel__next"><a href="#"><img src="img/sprite.png" alt="Previous"></a></span>
+						<span>
+							<span class="carousel__title">Название проекта</span>
+							<span class="carousel__title">Проекта название</span>
+						</span>
+						<span class="carousel__prev"><a href="#"><img src="img/sprite.png" alt="Next"></a></span>
 					</div>
 				</div>
 			</div>
@@ -314,7 +330,9 @@
 	</footer>
 </body>
 <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/REM-unit-polyfill.js"></script>
+    <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="../bower_components/rem-unit-polyfill/js/rem.min.js"></script>
 <![endif]-->
+<script src="../bower_components/jquery-legacy/jquery.min.js"></script>
+<script src="js/carousel.js"></script>
 </html>

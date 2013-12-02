@@ -1,0 +1,14 @@
+{
+  "name": "rem-unit-polyfill",
+  "homepage": "https://github.com/chuckcarpenter/REM-unit-polyfill",
+  "_release": "6338a22cfd",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6338a22cfdcbf1798c20e10104982a0f71ab6646"
+  },
+  "_source": "git://github.com/chuckcarpenter/REM-unit-polyfill.git",
+  "_target": "*",
+  "_originalSource": "rem-unit-polyfill",
+  "_direct": true
+}

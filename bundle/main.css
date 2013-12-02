@@ -299,7 +299,7 @@ header {
   text-align: left;
   margin-left: 48px; }
 
-.big-carousel__img-block {
+.big-carousel__wrapper {
   width: 490px;
   height: 500px;
   position: relative;
@@ -350,13 +350,19 @@ header {
   float: right;
   text-align: right; }
 
-.carousel__img-block {
+.carousel__wrapper {
   position: relative; }
 
+.carousel__img-block {
+  position: relative;
+  overflow: hidden; }
+
 .carousel__img {
-  display: none; }
+  position: absolute;
+  display: list-item; }
   .carousel__img.active {
-    display: inline; }
+    display: inline;
+    position: relative; }
 
 .carousel__progress {
   position: absolute;
@@ -373,9 +379,16 @@ header {
   position: absolute;
   bottom: 5px; }
 
+.carousel__title-block {
+  display: inline-block; }
+
 .carousel__title {
   position: relative;
-  top: 5px; }
+  top: 5px;
+  display: none; }
+
+.carousel__title.active {
+  display: inline; }
 
 .carousel__prev, .carousel__next {
   position: relative;

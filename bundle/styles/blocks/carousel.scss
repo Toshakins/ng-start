@@ -1,12 +1,18 @@
-.carousel__img-block {
+.carousel__wrapper {
 	position: relative;
 }
 
+.carousel__img-block {
+	position: relative;
+	overflow: hidden;
+}
 
 .carousel__img {
-	display: none;
+	position: absolute;
+	display: list-item;
 	&.active {
 		display: inline;
+		position: relative;
 	}
 }
 
@@ -27,9 +33,18 @@
 	bottom: 5px;
 }
 
+.carousel__title-block {
+	display: inline-block;
+}
+
 .carousel__title {
 	position: relative;
 	top: 5px;
+	display: none;
+}
+
+.carousel__title.active {
+	display: inline;
 }
 
 .carousel__prev, .carousel__next {

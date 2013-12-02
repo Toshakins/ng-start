@@ -1,0 +1,24 @@
+{
+  "name": "ng-start",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Toshakins/ng-start",
+  "authors": [
+    "Toshakins <toshakins@gmail.com>"
+  ],
+  "description": "Nina Getashvili's start page",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "html5shiv": "~3.7.0",
+    "rem-unit-polyfill": "*",
+    "jquery-legacy": "jquery#1.10.2"
+  }
+}

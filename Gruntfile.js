@@ -15,9 +15,18 @@ module.exports = function (grunt) {
                     ext: '.css'
                 }]
             }
+        },
+        jshint: {
+            options: {
+                jshintrc: '.jshintrc',
+            },
+            files: {
+                src: ['bundle/js/*.js']
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.registerTask('default', ['sass']);
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.registerTask('default', ['sass', 'jshint']);
 }
