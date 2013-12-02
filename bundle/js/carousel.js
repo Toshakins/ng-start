@@ -43,7 +43,6 @@ var rightAnimation = function(nextImg, activeImg, nextTitle, activeTitle) {
 		});
 	});
 
-	console.log(nextImg);
 	nextImg.css({
 		'top': '0',
 		'left': '100%'
@@ -96,7 +95,7 @@ var carouselShifter = function (rootElement, carouselObject, direction, leftAnim
 		}
 	} else {
 		nextImg = getNext(activeImg);
-		nextTitle = getPrev(activeTitle);
+		nextTitle = getNext(activeTitle);
 
 		rightAnimation(nextImg, activeImg, nextTitle, activeTitle);
 		if (position.text() === of.text()) {
